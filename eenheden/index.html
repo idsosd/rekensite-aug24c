@@ -61,7 +61,7 @@
           </div>
           <div class="card-body">
             <select class="form-select" id="dimselect">
-              <option selected>Maak een keuze...</option>
+              <option value="0">Maak een keuze...</option>
               <option value="1">1D (lengte)</option>
               <option value="2">2D (oppervlakte)</option>
               <option value="3">3D (inhoud)</option>
@@ -71,24 +71,24 @@
               <div class="col-4">
                 <div class="input-group mb-3">
                   <input type="text" class="form-control" id="opginput">
-                  <span class="input-group-text" id="opgeenh">m</span>
+                  <span class="input-group-text" id="opgeenh"></span>
                 </div>
               </div>
               <div class="col-1">=</div>
               <div class="col-7">
                 <div class="input-group mb-3">
                   <input type="text" class="form-control" id="antwinput">
-                  <span class="input-group-text" id="antweenh">m</span>
+                  <span class="input-group-text" id="antweenh"></span>
                 </div>
               </div>
             </div>
 
             <div class="row">
               <div class="col d-grid">
-                <button class="btn btn-primary" onclick="hallo()">NIEUW</button>
+                <button class="btn btn-primary" onclick="nieuw()">NIEUW</button>
               </div>
               <div class="col d-grid">
-                <a href="#" class="btn btn-success" onclick="welkom()">CHECK</a>
+                <a href="#" class="btn btn-success" onclick="check()">CHECK</a>
               </div>
             </div>
 
