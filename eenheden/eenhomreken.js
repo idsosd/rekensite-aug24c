@@ -21,8 +21,16 @@ function nieuw(){
             opgeenh.innerHTML = eenheden[randomnmbr];
         else
             opgeenh.innerHTML = eenheden[randomnmbr] + "<sup>" + dimension.value + "</sup>";
-        //console.log("De gekozen dimensie = " + dimension.value);
-        //console.log("het eerste element uit eenheden = " + eenheden[0]);
+        
+        
+        
+        
+            let randomnmbr2 = Math.floor(Math.random() * 7);
+            console.log("randomnmbr2 = " + randomnmbr2 + " met eenheid = " + eenheden[randomnmbr2]);
+            antweenh.innerHTML = eenheden[randomnmbr2] + "<sup>" + dimension.value + "</sup>";
+            
+            let randomdec = (Math.random() * 1000).toFixed(3);
+            opg.value = randomdec;
     }
 }
 
